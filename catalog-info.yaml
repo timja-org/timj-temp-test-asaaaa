@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "timj-product-infrastructure"
+  description: Product infrastructure for timj
+  annotations:
+    # This must match folder-name/job-name in Jenkins.
+    jenkins.io/job-full-name: cft:HMCTS_timj/timj-temp-test-asaaaa
+    github.com/project-slug: 'timja-org/timj-temp-test-asaaaa'
+  tags:
+    - terraform
+  links:
+    - url: https://hmcts-reform.slack.com/app_redirect?channel=platops-help
+      title: platops-help on Slack
+      icon: chat
+spec:
+  type: service
+  system: timj
+  lifecycle: experimental
+  owner: dts_cft_developers
